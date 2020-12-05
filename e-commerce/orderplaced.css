@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#topbar{
+    width:100%;
+    position: sticky;
+    background-color: #333033;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 30px;
+    z-index: 100;
+    top: 0;
+}
+#leftTopbar{
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+#leftTopbar h3{
+    letter-spacing: 0.9px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    width:160px;
+    cursor: pointer;
+}
+#clothsSelect{
+    padding:28px;
+    position: relative;
+    cursor: pointer;
+}
+#gadgetSelect{
+    padding:28px;
+    cursor: pointer;
+}
+#clothsSelect:hover,#gadgetSelect:hover{
+    background-color: #FFDA10;
+    color:#333033;
+}
+#rightTopbar{
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#searchBox{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#searchBox input{
+    border:none;
+    padding-left: 5px;
+    height:35px;
+    width:200px;
+    font-size: 20px;
+    outline: none;
+    color: whitesmoke;
+    background-color: rgb(94, 94, 94);
+}
+#searchBox svg{
+    font-size: 30px;
+    position: absolute;
+    color:whitesmoke;
+    right:5px;
+    cursor: pointer;
+}
+#cart,#userProfile{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 900px){
+    #topbar {
+        padding:0;
+      }
+      #searchBox input{
+          display: none;
+      }
+      #leftTopbar{
+          width:30%;
+      }
+      #logo img{
+          width: 140px;
+      }
+      #clothsSelect,#gadgetSelect{
+          padding: 28px 16px;
+          cursor: pointer;
+      }
+      #rightTopbar{
+          width: 18%;
+      }
+  }
+@media only screen and (max-width: 600px) {
+
+    #searchBox{
+        display: none;
+    }
+    #rightTopbar{
+        width: 10%;
+    }
+    #userProfile{
+        display: none;
+    }
+  }
+
+
+
+#itemsCount{
+    background-color: #FFDA10;
+    border-radius: 2px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20px;
+    height:20px;
+    color: #333033;
+    font-weight: 600;
+    position: absolute;
+    right:-10px;
+    top:-10px;
+}
+#cart svg,#userProfile svg{
+    font-size: 35px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#orderplacedWrap{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+#orderplacedWrap img{
+    width:400px;
+}
+#orderplacedWrap h2{
+    font-size: 26px;
+    letter-spacing: 1px;
+    color: #333033;
+}
+#orderplacedWrap h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+}

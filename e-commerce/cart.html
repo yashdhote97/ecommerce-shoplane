@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+    <div id="topbar">
+        <div id="leftTopbar">
+            <div id="logo">
+                <a href="./homepage.html">
+                    <img src="./logo/shpLane.svg" alt="logo">
+                </a>
+            </div>
+            <div id="clothsSelect">
+                <h3>Home</h3>
+            </div>
+            <div id="gadgetSelect">
+                <h3>Back</h3>
+            </div>
+        </div>
+        <div id="rightTopbar">
+            <div id="searchBox">
+                <input type="text" placeholder="Search.." name="search">
+                <span class="iconify" data-icon="bx:bx-search-alt" data-inline="false"></span>
+            </div>
+            <div id="cart">
+                <span class="iconify" data-icon="clarity:shopping-cart-line" data-inline="false"></span>
+                <div id="itemsCount">
+                    <span id="count">0</span>
+                </div>
+            </div>
+            <div id="userProfile">
+                <span class="iconify" data-icon="fa-solid:user-circle" data-inline="false"></span>
+            </div>
+        </div>
+    </div> 
+    <div id="cartwrap">
+        <h3>MY CART</h3>
+        <div id="innercartWrap">
+            <div id="innercartLeft">
+                <h4 id="cartItemsCount">0 Items</h4>
+                <div id="itemListWrapper">
+ 
+                </div>
+            </div>
+            <div id="innercartRight">
+                <h4>OFFER</h4>
+                <h4>PRICE SUMMARY</h4>
+                <div id="cartValueWrap">
+                    <div class="checkoutContents">
+                        <h4>CART TOTAL</h4>
+                        <span class="colon">:</span>
+                        <h4 id="cartTotal">RS 0</h4>
+                    </div>
+                    <div class="checkoutContents">
+                        <h4>SHIPPING CHARGES</h4>
+                        <span class="colon">:</span>
+                        <h4>FREE</h4>
+                    </div>
+                    <div class="checkoutContents">
+                        <div class="totalAmountWrap">
+                            <h4>TOTAL PAYABLE</h4>
+                            <span class="colon">:</span>
+                            <p>PRICE INCLUSIVE OF ALL TAXES</p>
+                        </div>
+                        <h4 id="cartTotalWithTaxes">RS 0</h4>
+                    </div>
+                </div>
+                <a href="#" class="btn" id="checkoutBtn">PROCEED TO CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="online-store">
+          <li>
+            <h3>Online Store</h3>
+          </li>
+          <li><a href="#">Men Clothing</a></li>
+          <li><a href="#">Women Clothing</a></li>
+          <li><a href="#">Men Accessories</a></li>
+          <li><a href="#">Women Accessories</a></li>
+        </ul>
+        <ul class="helpful-links">
+          <li>
+            <h3>Helpful Links</h3>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="patners">
+          <li>
+            <h3>Patners</h3>
+          </li>
+          <li><a href="#">Zara</a></li>
+          <li><a href="#">Pantaloons</a></li>
+          <li><a href="#">Levis</a></li>
+          <li><a href="#">Ucb</a></li>
+          <li><a href="#">+ Many More</a></li>
+        </ul>
+        <ul class="address">
+          <li>
+            <h3>Address</h3>
+          </li>
+          <li>Building 101</li>
+          <li>Central Avenue</li>
+          <li>LA - 902722</li>
+          <li>United States</li>
+        </ul>
+      </footer> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./cart.js"></script>
+</body>
+</html>
